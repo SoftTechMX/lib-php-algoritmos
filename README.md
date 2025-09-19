@@ -9,5 +9,5 @@ composer 2.
 
 Para instalar mediante coposer ejecuta el siguiente comando
 ```bash
-composer install soft-tech-mx/algoritmos
+composer require soft-tech-mx/algoritmos
 ```
