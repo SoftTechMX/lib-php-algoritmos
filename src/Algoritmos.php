@@ -53,7 +53,7 @@ class Algoritmos
                     }
                 }
             }
-            
+
             return true;
         }
         catch(Exception $e)
