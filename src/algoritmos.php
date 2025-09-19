@@ -2,9 +2,11 @@
 
 namespace SoftTechMX;
 
+use Exception;
+
 class Algoritmos
 {
-    public $cycleCounter;
+    public $contador_de_ciclos;
     
     /**
      * ======================================================================================================
@@ -26,28 +28,36 @@ class Algoritmos
      */
     public function bubbleSort( &$a )
     {
-        // VALIDAMOS QUE $a SEA UN ARRAY
-        if( is_array($a) )
+        $this->contador_de_ciclos = 0;
+
+        try
         {
+            if(!is_array($a)) 
+            {
+                return false;
+            }
+
             $array_size = count($a);
+
             for($i = 0; $i < ($array_size - 1); $i++)
             {
                 for($j = 0; $j < ($array_size - 1) - $i; $j++)
                 {
                     if( $a[$j] > $a[$j+1] )
                     {
-                        $aux = $a[$j];
-                        $a[$j] = $a[$j+1];
+                        $aux     = $a[$j];
+                        $a[$j]   = $a[$j+1];
                         $a[$j+1] = $aux;
-                        $this->cycleCounter++;
+
+                        $this->contador_de_ciclos++;
                     }
                 }
             }
+            
             return true;
         }
-        else
+        catch(Exception $e)
         {
-            // SI $a NO ES UN ARRAY
             return false;
         }
     }
@@ -83,7 +93,7 @@ class Algoritmos
                 $a[$i] = $a[$j];
                 $a[$j] = $aux;
 
-                $this->cycleCounter++;
+                $this->contador_de_ciclos++;
             }
         }
         
