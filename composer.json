@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SoftTechMX\\Algoritmos\\": "src/"
+            "SoftTechMX\\": "src/"
         }
     },
     "authors": [
