@@ -1,0 +1,18 @@
+{
+    "name": "soft-tech-mx/algoritmos",
+    "description": "This package allows you to have a wide range of sorting and other algorithms available in a single class.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SoftTechMx\\Algoritmos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bayron Vazquez",
+            "email": "bayronnjonathan@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,20 +1,26 @@
 <?php
 
+namespace SoftTechMX;
+
 class Algoritmos
 {
     public $cycleCounter;
     
     /**
-     *                                  bubbleSort Algorithm Time Complexity
-     * +----------------------------------------------------------------------------------------------------+
-     * |         Best               |                 Worst              |             Average              |
-     * +----------------------------------------------------------------------------------------------------+
-     * |         O(n)               |                 O(n^2)             |              O(n^2)              |
-     * +----------------------------------------------------------------------------------------------------+
+     * ======================================================================================================
+     *                                bubbleSort Algorithm Time Complexity
+     * Best:        O(n)
+     * Worst:       O(n^2)
+     * Average:     O(n^2)
+     * ======================================================================================================
+     * 
      * @brief ordena los elementos de un array de menor a mayor.
+     * 
      * @category algoritmo de ordenamiento.
+     * 
      * @param int* arreglo
      * Es el array que se desea ordenar
+     * 
      * @return bool
      * Si el array se puede ordenar de manera correcta retorna true, en caso de algun error retorna false.
      */
